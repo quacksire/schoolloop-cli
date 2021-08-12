@@ -1,0 +1,17 @@
+{
+  "name": "schoolloop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "enquirer": "^2.3.6",
+    "ora": "^5.4.1",
+    "urlencode": "^1.1.0"
+  }
+}
