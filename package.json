@@ -1,17 +1,27 @@
 {
-  "name": "schoolloop",
+  "name": "@childduckling/school-loop",
   "version": "1.0.0",
-  "description": "",
+  "description": "A client to access the SchoolLoop and OpenLoop APIs",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "",
+  "author": "childduckling",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
+    "base-64": "^1.0.0",
     "enquirer": "^2.3.6",
     "ora": "^5.4.1",
     "urlencode": "^1.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/child-duckling/schoolloop-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/child-duckling/schoolloop-cli/issues"
+  },
+  "homepage": "https://github.com/child-duckling/schoolloop-cli#readme"
 }
