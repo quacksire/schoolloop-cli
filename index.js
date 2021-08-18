@@ -1,44 +1,17 @@
 #!/usr/bin/env node
 
-let axios = require('axios');
-let os = require('os')
-//const ora = require('ora');
-//const { AutoComplete, BasicAuth, Invisible, Input } = require('enquirer');
-var base64 = require('base-64');
+
+//https://github.com/saagarjha/break/blob/e6bfd63cab1f5517cc622794149deae9cb0bee4e/break/SchoolLoop/SchoolLoopConstants.swift
+
+const sl = require('./school-loop')
+
 var urlencode = require('urlencode');
+let auth = `${urlencode('sjeffs24')}:${urlencode('jef228sc')}`
 
-let pack = module.exports
+//sl.schoolList().then(console.log)
 
+//sl.user('hmbhs.schoolloop.com', auth).then((response) => { console.log(response.data.students)  })
 
-// Litterly any token works
-let token = os.release()
-let devOS = os.type()
-let year = new Date().getFullYear()
+//sl.courses('hmbhs.schoolloop.com', '1593846838236', auth).then((response) => { console.log(response.data) })
 
-pack.schoolList = () => {
-
-    axios('https://anything-can-go-here.schoolloop.com/mapi/schools')
-        .then(function(response) {
-        
-            return response.data
-            
-        })
-
-}
-
-pack.user = (slDomain, slUsername, slPassword) => {
-
-
-    let auth = `${urlencode(username)}:${urlencode(password)}`
-    auth = base64.encode(auth)
-    axios(`https://${school.domainName}/mapi/login?version=3&devToken=${token}&devOS=${devOS}&year=${year}`, {
-        headers: {
-            Authorization: `Basic ${auth}`,
-        }
-    })
-    .then(function (response) {
-        return response
-    })
-
-}
-
+sl.grade('hmbhs.schoolloop.com', '1593846838236', '1593846839201', auth).then((response) => { console.log(response.data[0].trendScores)})
