@@ -13,6 +13,27 @@ let token = os.release()
 let devOS = os.type()
 let year = new Date().getFullYear()
 
+
+
+
+class SchoolLoop {
+  constructer(slDomain, auth) {
+    this.domain = slDomain;
+    this.auth = base64.encode(auth)
+    this.user = axios(`https://${slDomain}/mapi/login?version=3&devToken=${token}&devOS=${devOS}&year=${year}`, { headers: { Authorization: `Basic ${auth}` }})
+    .then(function (response) {
+        console.log(response)
+        return response
+    })
+
+
+  }
+
+
+
+
+
+}
 pack.schoolList = () => {
 
     return axios('https://anything-can-go-here.schoolloop.com/mapi/schools').then((response) => { return response.data})
