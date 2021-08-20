@@ -11,11 +11,12 @@
   "dependencies": {
     "axios": "^0.21.1",
     "base-64": "^1.0.0",
+    "conf": "^10.0.2",
     "enquirer": "^2.3.6",
+    "figlet": "^1.5.2",
     "ora": "^5.4.1",
     "urlencode": "^1.1.0"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/child-duckling/schoolloop-cli.git"

@@ -4,23 +4,30 @@
 //https://github.com/saagarjha/break/blob/e6bfd63cab1f5517cc622794149deae9cb0bee4e/break/SchoolLoop/SchoolLoopConstants.swift
 let axios = require('axios');
 let os = require('os')
-//const ora = require('ora');
-//const { AutoComplete, BasicAuth, Invisible, Input } = require('enquirer');
-var base64 = require('base-64');
 
 
-let pack = module.exports;
+const ora = require('ora');
+const loginSpinner = ora('Logging In...').start();
+
+
+const { AutoComplete, BasicAuth, Invisible, Input, Select } = require('enquirer');
+let base64 = require('base-64');
+let urlencode = require('urlencode');
+
+var figlet = require('figlet');
+
 
 
 // Litterly any token works
-
-
 let token = os.release();
 let devOS = os.type();
 let year = new Date().getFullYear();
 
 
-let urlencode = require('urlencode');
+const Conf = require('conf');
+const config = new Conf();
+//config.clear()
+
 
 
 let sl = require('./school-loop');
@@ -29,30 +36,38 @@ let sl = require('./school-loop');
 
 
 
-async function slstuff(slclass) {
+async function slstuff() {
     
-    let SLuser = {
-        method: 'get',
-        url: `https://${slclass.subdomain}.schoolloop.com/mapi/login?version=3&devToken=${token}&devOS=${devOS}&year=${year}`,
-        headers: {
-            'Authorization': `Basic ${slclass.auth}`
-        }
-    };
-    slclass.user = await axios(SLuser).then((response) => { return response.data })
-    slclass.user.studentID = slclass.user.students[0].studentID
     //console.log(slclass.user)
     
     
     let SLcourses = {
         method: 'get',
-        url: `https://${slclass.subdomain}.schoolloop.com/mapi/report_card?studentID=${slclass.user.studentID}`,
+        url: `https://${config.get('slDomain')}/mapi/report_card?studentID=${config.get('slUser.studentID')}`,
         headers: {
-            'Authorization': `Basic ${slclass.auth}`
+            'Authorization': `Basic ${config.get('auth')}`
         }
     }
-    slclass.courses = await axios(SLcourses).then((response) => { return response.data })
-    console.log(slclass.courses)
+    let courses = await axios(SLcourses).then((response) => { return response.data })
     
+    
+    
+    
+    let classList = [];
+    courses.forEach((classes) => {
+        classList.push(``)
+    
+    
+    
+    })
+    
+    
+    
+    const prompt = new Select({
+        name: 'color',
+        message: 'Pick a flavor',
+        choices: ['apple', 'grape', 'watermelon', 'cherry', 'orange']
+    });
     
     
 
@@ -63,7 +78,7 @@ async function slstuff(slclass) {
     
     
 
-    return slclass
+    
 }
 class SchoolLoop {
     constructor(slSubdomain, auth) {
@@ -85,6 +100,112 @@ class SchoolLoop {
 
 
 
+function login() {
+    /// Login Flow
+    loginSpinner.stop()
+    loginSpinner.clear()
+    console.clear()
+    const spinner = ora('Getting list of schools').start();
+    let schoolList = axios('https://anything-can-go-here.schoolloop.com/mapi/schools')
+        .then(function (response) {
+            //console.log(response.data)
+            let schoolNames = new Array()
+            response.data.forEach(school => {
+                schoolNames.push(school.name)
+            });
+            //console.log(schoolList[0])
+            spinner.stop()
+            const schoolSelector = new AutoComplete({
+                name: 'schools',
+                message: 'School Name',
+                limit: 1,
+                initial: 0,
+                choices: schoolNames
+            });
+            schoolSelector.run()
+                .then(answer => {
+                    //Get School Object
+                    let counter = 0
+                    while (true) {
+                        if (response.data[counter].name == answer) {
+                            break
+                        }
+                        counter++
+                    }
+                    school = response.data[counter]
+                    //console.log(school)
+                    let username
+                    let password
+                    const usernamePrompt = new Input({
+                        message: `Please enter your username to log into ${school.name}`,
+                        initial: 'johnappleseed'
+                    });
+                    usernamePrompt.run().then(answer => {
+
+                        username = answer
+                        const passwordPrompt = new Invisible({
+                            message: `Password?`
+                        });
+                        passwordPrompt.run().then(answer => {
+                            password = answer
+                            axios(`https://${school.domainName}/mapi/login?version=3&devToken=${token}&devOS=${devOS}&year=${year}`, {
+                                headers: {
+                                    authorization: `Basic ${base64.encode(`${urlencode(username)}:${urlencode(password)}`)}`,
+                                }
+                            })
+                                .then(function (response) {
+                                    config.set('auth', `${base64.encode(`${urlencode(username)}:${urlencode(password)}`)}`)
+                                    config.set('slUser', response.data)
+                                    config.set('slUser.studentID', response.data.students[0].studentID)
+                                    config.set('slDomain', school.domainName)
+                                    
+                                    
+                                    checkAuth() //Loopback
+                                })
+                                //////////////////////
+                                .catch(function (err) {
+                                    console.error(`Login Failed \n ${err.response.data}`)
+                                })
+
+                        }).catch(console.log);
+                    }).catch(console.log);
+                })
+                .catch(console.error);
+        });
+
+}
+
+function checkAuth() {
+
+    if (config.get('auth')) {
+    
+    
+        start()
+    
+    } else {
+    
+        login()
+    
+    }
+
+
+
+
+}
+
+function start() {
+    loginSpinner.stop()
+    loginSpinner.clear()
+    figlet('School Loop', function (err, data) {
+    if (err) {
+        console.log('Something went wrong...');
+        console.dir(err);
+        return;
+    }
+        console.log(data)
+        
+    });
+    slstuff()
 
 
 
@@ -92,14 +213,16 @@ class SchoolLoop {
 
 
 
+}
 
 
 
 
-let auth = `${urlencode('sjeffs24')}:${urlencode('jef228sc')}`
 
 
-new SchoolLoop('hmbhs', auth)
+checkAuth()
+//login()
+//new SchoolLoop('hmbhs', auth)
 //sl.schoolList().then(console.log)
 
 //sl.user('hmbhs.schoolloop.com', auth).then((response) => { console.log(response.data.students)  })
