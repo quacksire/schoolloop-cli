@@ -31,10 +31,6 @@ let sl = require('./school-loop');
 
 async function slstuff(slclass) {
     
-    
-    
-    
-    
     let SLuser = {
         method: 'get',
         url: `https://${slclass.subdomain}.schoolloop.com/mapi/login?version=3&devToken=${token}&devOS=${devOS}&year=${year}`,
@@ -78,7 +74,7 @@ class SchoolLoop {
 
         
 
-        slstuff(this)
+        slstuff(this)//.then((this) => )
         
         
         
