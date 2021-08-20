@@ -5,7 +5,7 @@
 let axios = require('axios');
 let os = require('os')
 
-
+`https://${config.get('slDomain')}/mapi/progress_report?studentID=\periodID=\(periodID)`
 const ora = require('ora');
 const loginSpinner = ora('Logging In...').start();
 
@@ -52,10 +52,9 @@ async function slstuff() {
     
     
     
-    
     let classList = [];
     courses.forEach((classes) => {
-        classList.push(`${classes.period} - ${classes.courseName} [${classes.teacherName}]`)//////////////////////////////////----------------------
+        classList.push(`${classes.period} - ${classes.courseName} [${classes.teacherName}]`)
     
     
     
@@ -72,7 +71,14 @@ async function slstuff() {
     
 
     prompt.run()
+  .then(answer => {
+    answer = parseInt(String(answer).split(' ')[0] ) - 2  
+
+
+    let selectedNum = answer
     
+    console.log(selectedNum)
+  })
 
 
     
@@ -108,12 +114,10 @@ function login() {
     const spinner = ora('Getting list of schools').start();
     let schoolList = axios('https://anything-can-go-here.schoolloop.com/mapi/schools')
         .then(function (response) {
-            //console.log(response.data)
             let schoolNames = new Array()
             response.data.forEach(school => {
                 schoolNames.push(school.name)
             });
-            //console.log(schoolList[0])
             spinner.stop()
             const schoolSelector = new AutoComplete({
                 name: 'schools',
@@ -133,7 +137,6 @@ function login() {
                         counter++
                     }
                     school = response.data[counter]
-                    //console.log(school)
                     let username
                     let password
                     const usernamePrompt = new Input({
@@ -141,7 +144,6 @@ function login() {
                         initial: 'johnappleseed'
                     });
                     usernamePrompt.run().then(answer => {
-
                         username = answer
                         const passwordPrompt = new Invisible({
                             message: `Password?`
@@ -154,6 +156,7 @@ function login() {
                                 }
                             })
                                 .then(function (response) {
+																	///Persist the data
                                     config.set('auth', `${base64.encode(`${urlencode(username)}:${urlencode(password)}`)}`)
                                     config.set('slUser', response.data)
                                     config.set('slUser.studentID', response.data.students[0].studentID)
@@ -165,20 +168,18 @@ function login() {
                                 //////////////////////
                                 .catch(function (err) {
                                     console.error(`Login Failed \n ${err.response.data}`)
+																		setTimeout(checkAuth(), 3000)
                                 })
-
                         }).catch(console.log);
                     }).catch(console.log);
                 })
                 .catch(console.error);
         });
-
 }
 
 function checkAuth() {
 
     if (config.get('auth')) {
-    
     
         start()
     
@@ -196,6 +197,7 @@ function checkAuth() {
 function start() {
     loginSpinner.stop()
     loginSpinner.clear()
+    console.clear()
     figlet('School Loop', function (err, data) {
     if (err) {
         console.log('Something went wrong...');
