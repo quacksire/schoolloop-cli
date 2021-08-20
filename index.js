@@ -55,7 +55,7 @@ async function slstuff() {
     
     let classList = [];
     courses.forEach((classes) => {
-        classList.push(``)
+        classList.push(`${classes.period} - ${classes.courseName} [${classes.teacherName}]`)//////////////////////////////////----------------------
     
     
     
