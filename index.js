@@ -64,8 +64,8 @@ async function slstuff() {
     
     
     const prompt = new Select({
-        name: 'color',
-        message: 'Pick a flavor',
+        name: '',
+        message: '',
         choices: classList
     });
     
