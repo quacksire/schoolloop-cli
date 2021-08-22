@@ -11,9 +11,11 @@
   "dependencies": {
     "axios": "^0.21.1",
     "base-64": "^1.0.0",
+    "cli-table": "^0.3.6",
     "conf": "^10.0.2",
     "enquirer": "^2.3.6",
     "figlet": "^1.5.2",
+    "html-to-text": "^8.0.0",
     "ora": "^5.4.1",
     "urlencode": "^1.1.0"
   },
@@ -24,5 +26,10 @@
   "bugs": {
     "url": "https://github.com/child-duckling/schoolloop-cli/issues"
   },
-  "homepage": "https://github.com/child-duckling/schoolloop-cli#readme"
+  "homepage": "https://github.com/child-duckling/schoolloop-cli#readme",
+  "bin": {
+    "schoolloop": "./index.js",
+    "sl": "./index.js",
+    "loopy": "./index.js"
+  }
 }

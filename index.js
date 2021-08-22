@@ -5,17 +5,20 @@
 let axios = require('axios');
 let os = require('os')
 
-`https://${config.get('slDomain')}/mapi/progress_report?studentID=\periodID=\(periodID)`
+//`https://${config.get('slDomain')}/mapi/progress_report?studentID=\periodID=\(periodID)`
 const ora = require('ora');
 const loginSpinner = ora('Logging In...').start();
+const loadingSpinner = ora('Loading...')
 
-
-const { AutoComplete, BasicAuth, Invisible, Input, Select } = require('enquirer');
+const { AutoComplete, BasicAuth, Invisible, Input, Select, Toggle } = require('enquirer');
 let base64 = require('base-64');
 let urlencode = require('urlencode');
 
 var figlet = require('figlet');
+var Table = require('cli-table');
 
+//npm install open
+const { convert } = require('html-to-text');
 
 
 // Litterly any token works
@@ -31,13 +34,14 @@ const config = new Conf();
 
 
 let sl = require('./school-loop');
+let slClass;
 
 
 
 
 
 async function slstuff() {
-    
+    //loadingSpinner.start()
     //console.log(slclass.user)
     
     
@@ -48,44 +52,157 @@ async function slstuff() {
             'Authorization': `Basic ${config.get('auth')}`
         }
     }
+    
+    
+    let SLassignments = {
+        method: 'get',
+        url: `https://${config.get('slDomain')}/mapi/assignments?studentID=${config.get('slUser.studentID')}`,
+        headers: {
+            'Authorization': `Basic ${config.get('auth')}`
+        }
+    }
+    
+    let SLnews = {
+        method: 'get',
+        url: `https://${config.get('slDomain')}/mapi/news?studentID=${config.get('slUser.studentID')}`,
+        headers: {
+            'Authorization': `Basic ${config.get('auth')}`
+        }
+    }
+    
+    
+    
     let courses = await axios(SLcourses).then((response) => { return response.data })
+    let assignments = await axios(SLassignments).then((response) => { return response.data})
+    let news = await axios(SLnews).then((response) => { return response.data})
+    //console.log(news)
+    
+    let main = [];
+    let firstSpace;
+    let secondSpace
     
     
-    
-    let classList = [];
+    main.push(`------------------ Classes ------------------`)
     courses.forEach((classes) => {
-        classList.push(`${classes.period} - ${classes.courseName} [${classes.teacherName}]`)
-    
+        firstSpace = ''
+        secondSpace = ''
+        let firstSpaces = 20 - (String(classes.courseName).length + 2)
+        firstSpace = ' '.repeat(parseInt(firstSpaces))
+        
+        let secondSpaces = 15 - (String(classes.grade).length - 1)
+        secondSpace = ' '.repeat(parseInt(secondSpaces))
+        main.push(`${classes.period} ${classes.courseName}${firstSpace}> ${classes.grade}${secondSpace}[${classes.teacherName}]`)
+    })
+    main.push(`------------------ Assignments ------------------`)
+    assignments.forEach((assignment, num) => {
+        firstSpace = ''
+        let firstSpaces = 15 - String(assignment.title).length
+        firstSpace = ' '.repeat(firstSpaces)        
+        
+        secondSpace = ''
+        let secondSpaces = 15 - (String(assignment.maxPoints).length + 7)
+        secondSpace = ' '.repeat(secondSpaces)
+        
+        main.push(`[] ${num} - ${assignment.title}${firstSpace}${assignment.maxPoints} Points${secondSpace}${assignment.courseName}`)
     
     
     })
+    main.push(`------------------ News ------------------`)
+    news.forEach((article, num) => {
+        
+        main.push(`# ${num} ${convert(article.title, {wordwrap: 130})}`)
     
     
+
+    
+    })
     
     const prompt = new Select({
         name: '',
         message: '',
-        choices: classList
+        choices: main
     });
     
     
-
+    //loadingSpinner.stop()
+    //loadingSpinner.clear()
     prompt.run()
-  .then(answer => {
-    answer = parseInt(String(answer).split(' ')[0] ) - 2  
+        .then(async (answer) => {
+            console.log(answer)
+            if (String(answer).startsWith('[') || String(answer).startsWith('-')) {
+                //do nothing
+                start()
+                
+            
+            } if (String(answer).startsWith('#')) {
+            
+                let article = news[parseInt(String(answer).charAt(2))]
+                //console.log(article)
+            
+                // The articles are in HTML format
+                article.description = convert(article.description, {
+                    wordwrap: 130
+                })
+                
+                console.log(`\n\nFrom: ${article.authorName}\nSubject: ${article.title}\n\n${article.description}`)
+                
+                
+                
+                
+            
+            } else {
+                
+            
+                
+                
+                //need some ui library for tables/graphs
 
+                answer = parseInt(String(answer).split(' ')[0]) - 2
+                let selectedNum = answer
+                SLclass = {
+                    method: 'get',
+                    url: `https://${config.get('slDomain')}/mapi/progress_report?studentID=${config.get('slUser.studentID')}&periodID=${courses[selectedNum].periodID}`,
+                    headers: {
+                        'Authorization': `Basic ${config.get('auth')}`
+                    }
+                }
+                let SLclassInfo = await axios(SLclass).then((response) => { return response.data })
+                //console.log(SLclassInfo)
+            
+            
+                var table = new Table()
+            
+            
+                table.push(
+                    { 'Name': `${SLclassInfo[0].course.name}` },
+                    { 'Teacher': `${SLclassInfo[0].teacher.name}` },
+                    { '---': `---` },
+                    { 'Grade': `${SLclassInfo[0].grade} (${SLclassInfo[0].score})` },
+                    { '---': `---` },
+                )
+                console.log(table.toString())
 
-    let selectedNum = answer
-    
-    console.log(selectedNum)
-  })
+                
+                
 
-
-    
-    
-
-    
+            }
+            const back = new Toggle({
+                    message: '',
+                    enabled: ' ',
+                    disabled: '⟪⟪ Back'
+                });
+                
+            back.run()
+            .then(answer => {
+                start()
+                
+            })
+            .catch(console.error);
+            
+        
+        })
 }
+
 class SchoolLoop {
     constructor(slSubdomain, auth) {
 
@@ -106,19 +223,29 @@ class SchoolLoop {
 
 
 
-function login() {
+async function login() {
     /// Login Flow
     loginSpinner.stop()
     loginSpinner.clear()
     console.clear()
     const spinner = ora('Getting list of schools').start();
     let schoolList = axios('https://anything-can-go-here.schoolloop.com/mapi/schools')
-        .then(function (response) {
+        .then(async function (response) {
             let schoolNames = new Array()
             response.data.forEach(school => {
                 schoolNames.push(school.name)
             });
             spinner.stop()
+            console.clear()
+            await figlet(`schoolloop.com`, function (err, data) {
+                if (err) {
+                    console.log('Something went wrong...');
+                    console.dir(err);
+                    return;
+                }
+                console.log(data)
+        
+            });
             const schoolSelector = new AutoComplete({
                 name: 'schools',
                 message: 'School Name',
@@ -127,7 +254,7 @@ function login() {
                 choices: schoolNames
             });
             schoolSelector.run()
-                .then(answer => {
+                .then(async answer => {
                     //Get School Object
                     let counter = 0
                     while (true) {
@@ -137,12 +264,23 @@ function login() {
                         counter++
                     }
                     school = response.data[counter]
+                    console.clear()
+                    await figlet(`${school.domainName}`, function (err, data) {
+                        if (err) {
+                            console.log('Something went wrong...');
+                            console.dir(err);
+                            return;
+                        }
+                        console.log(data)
+        
+                    });
                     let username
                     let password
                     const usernamePrompt = new Input({
                         message: `Please enter your username to log into ${school.name}`,
                         initial: 'johnappleseed'
                     });
+                    
                     usernamePrompt.run().then(answer => {
                         username = answer
                         const passwordPrompt = new Invisible({
@@ -156,7 +294,7 @@ function login() {
                                 }
                             })
                                 .then(function (response) {
-																	///Persist the data
+									///Persist the data
                                     config.set('auth', `${base64.encode(`${urlencode(username)}:${urlencode(password)}`)}`)
                                     config.set('slUser', response.data)
                                     config.set('slUser.studentID', response.data.students[0].studentID)
@@ -167,8 +305,8 @@ function login() {
                                 })
                                 //////////////////////
                                 .catch(function (err) {
-                                    console.error(`Login Failed \n ${err.response.data}`)
-																		setTimeout(checkAuth(), 3000)
+                                    console.error(`Login Failed \n ${err.response.data} \n Trying Again`)
+									setTimeout(checkAuth(), 3000)
                                 })
                         }).catch(console.log);
                     }).catch(console.log);
@@ -198,7 +336,7 @@ function start() {
     loginSpinner.stop()
     loginSpinner.clear()
     console.clear()
-    figlet('School Loop', function (err, data) {
+    figlet(`School Loop`, function (err, data) {
     if (err) {
         console.log('Something went wrong...');
         console.dir(err);
@@ -208,13 +346,6 @@ function start() {
         
     });
     slstuff()
-
-
-
-
-
-
-
 }
 
 
@@ -223,12 +354,3 @@ function start() {
 
 
 checkAuth()
-//login()
-//new SchoolLoop('hmbhs', auth)
-//sl.schoolList().then(console.log)
-
-//sl.user('hmbhs.schoolloop.com', auth).then((response) => { console.log(response.data.students)  })
-
-//sl.courses('hmbhs.schoolloop.com', '1593846838236', auth).then((response) => { console.log(response.data) })
-
-//sl.grade('hmbhs.schoolloop.com', '1593846838236', '1593846839201', auth).then((response) => { console.log(response.data[0].trendScores)})
