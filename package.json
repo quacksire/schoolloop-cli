@@ -4,7 +4,7 @@
   "description": "A client to access the SchoolLoop and OpenLoop APIs",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "run": "node index.js"
   },
   "author": "childduckling",
   "license": "ISC",
@@ -28,8 +28,16 @@
   },
   "homepage": "https://github.com/child-duckling/schoolloop-cli#readme",
   "bin": {
-    "schoolloop": "./index.js",
-    "sl": "./index.js",
-    "loopy": "./index.js"
-  }
+    "schoolloop": "index.js",
+    "sl": "index.js",
+    "loopy": "index.js"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "schoolloop",
+    "school",
+    "loop",
+    "cli",
+    "openloop"
+  ]
 }

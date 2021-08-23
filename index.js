@@ -1,6 +1,12 @@
 #!/usr/bin/env node
 // ^^ cli tool shebang ^^ 
 // DO NOT REMOVE
+
+
+"use strict"
+// This code had severe leakage
+
+
 /*
 Credit:
     For the links to the API
@@ -32,14 +38,17 @@ let token = os.release();
 let devOS = os.type();
 let year = new Date().getFullYear();
 
+
+
+
 //config.clear()
-let slClass;
 //#endregion
 /*
 Login flow
 This grabs the credentails from the user, logins in, and saves the user info/authintication for use in main()
 */
 async function login() {
+    config.clear()
     /// Login Flow
     loginSpinner.stop()
     loginSpinner.clear()
@@ -78,7 +87,8 @@ async function login() {
                         }
                         counter++
                     }
-                    school = response.data[counter]
+                    var school = response.data[counter]
+                    config.set('SLSchool', school)
                     console.clear()
                     await figlet(`${school.domainName}`, function (err, data) {
                         if (err) {
@@ -112,6 +122,7 @@ async function login() {
                                     config.set('slUser', response.data)
                                     config.set('slUser.studentID', response.data.students[0].studentID)
                                     config.set('slDomain', school.domainName)
+                                    
                                     checkAuth() //Loopback
                                 })
                                 //////////////////////
@@ -141,10 +152,9 @@ async function main() {
             return;
         }
         console.log(data)
-        
+        console.log(`Hello ${String(config.get('slUser').fullName).split(', ')[1]}!`)
     });
     //loadingSpinner.start()
-    //console.log(slclass.user)
     let SLcourses = {
         method: 'get',
         url: `https://${config.get('slDomain')}/mapi/report_card?studentID=${config.get('slUser.studentID')}`,
@@ -166,10 +176,18 @@ async function main() {
             'Authorization': `Basic ${config.get('auth')}`
         }
     }
+    let SLloopmail = {
+        method: 'get',
+        url: `https://${config.get('slDomain')}/mapi/mail_messages?studentID=${config.get('slUser.studentID')}`,
+        headers: {
+            'Authorization': `Basic ${config.get('auth')}`
+        }
+    }
     let courses = await axios(SLcourses).then((response) => { return response.data })
     let assignments = await axios(SLassignments).then((response) => { return response.data })
     let news = await axios(SLnews).then((response) => { return response.data })
-    //console.log(news)
+    let loopmails = await axios(SLloopmail).then((response) => { return response.data })
+    //console.log(loopmails)
     let main = [];
     let firstSpace;
     let secondSpace
@@ -197,6 +215,16 @@ async function main() {
     news.forEach((article, num) => {
         main.push(`# ${num} ${convert(article.title, { wordwrap: 130 })}`)
     })
+    main.push(`------------------ LoopMail ------------------`)
+    loopmails.forEach((mail, num) => {
+        main.push(`@ ${num} ${convert(mail.subject, { wordwrap: 130 })}`)
+    })
+    main.push(`------------------ SchoolLoop CLI ------------------`)
+    main.push(`! School Info`)
+    main.push(`! Deadname remover/changer`)
+    main.push(`! Log Out`)
+    main.push(`! Exit`)
+    
     const prompt = new Select({
         name: '',
         message: '',
@@ -207,18 +235,37 @@ async function main() {
     prompt.run()
         .then(async (answer) => {
             //console.log(answer)
-            if (String(answer).startsWith('#')) {
+            if (String(answer).startsWith('#')) { /*    News    */
                 let article = news[parseInt(String(answer).charAt(2))]
                 // The articles are in HTML format
                 article.description = convert(article.description, {
                     wordwrap: 130
                 })
-                console.log(`\n\nFrom: ${article.authorName}\nSubject: ${article.title}\n\n${article.description}`)
-            } else if (!isNaN(String(answer).charAt(0))){
+                //console.log(article)
+                let sentAt = new Date(parseInt(article.createdDate)).toLocaleDateString() //News articles don't have date AND time, only date
+                console.log(`\n\nFrom: ${article.authorName}\nSubject: ${article.title}\nSent: ${sentAt}\n\n${article.description}`)
+            } else if (String(answer).startsWith('@')) { /*    LoopMail    */
+                let mail = loopmails[parseInt(String(answer).charAt(2))]
+                // The mail is in HTML format
+                let SLmail = {
+                    method: 'get',
+                    url: `https://${config.get('slDomain')}/mapi/mail_messages?studentID=${config.get('slUser.studentID')}&ID=${mail.ID}`,
+                    headers: {
+                        'Authorization': `Basic ${config.get('auth')}`
+                    }
+                }
+                let message = await axios(SLmail).then((response) => { return response.data })
+                //console.log(message)
+                let sentAt = new Date(parseInt(message.date)).toLocaleString()
+                message.message = convert(message.message, {
+                    wordwrap: 130
+                })
+                console.log(`\n\nFrom: ${message.sender.name}\nSubject: ${message.subject}\nSent: ${sentAt}\n\n${message.message}`)
+            } else if (!isNaN(String(answer).charAt(0))) {  /*    Class Info    */
                 //need some ui library for tables/graphs
                 answer = parseInt(String(answer).split(' ')[0]) - 2
                 let selectedNum = answer
-                SLclass = {
+                let SLclass = {
                     method: 'get',
                     url: `https://${config.get('slDomain')}/mapi/progress_report?studentID=${config.get('slUser.studentID')}&periodID=${courses[selectedNum].periodID}`,
                     headers: {
@@ -236,21 +283,36 @@ async function main() {
                     { '---': `---` },
                 )
                 console.log(table.toString())
-            } else {
-                //do nothing
+                
+            } else if (String(answer).startsWith('!')) { /* CLI tool misc */
+                if (String(answer) == '! Log Out') {
+                    config.clear()
+                    
+                    console.log('Logged Out, run me a agian with \'schoolloop\'')
+                    process.kill(0)
+                } else if (String(answer) == '! School Info') {
+
+                    console.log(config.get('SLSchool'))
+                
+                } else {
+                
+                    console.log('\n\n\n\n\n\nGoodbye!')
+                    process.kill(0)
+                
+                
+                }
+            } else { /* Loop back and redraw */
+                //do nothing (used for the fillers)
                 checkAuth()
             }
+            
             const back = new Toggle({
                 message: '',
                 enabled: ' ',
                 disabled: '⟪⟪ Back'
-            });
-            back.run()
-                .then(answer => {
-                    checkAuth()
-                
-                })
-                .catch(console.error);        
+            })
+            
+            back.run().then(() => { checkAuth() }).catch(console.error);
         })
 }
 /*
