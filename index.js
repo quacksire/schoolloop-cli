@@ -1,20 +1,37 @@
 #!/usr/bin/env node
-// ^^ cli tool shebang ^^ 
-// DO NOT REMOVE
 
-
+/*!
+ * Copyright (c) 2021 child-duckling <duck@duckling.pw>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ *
+ *  For the links to the API
+ *  https://github.com/saagarjha/break/blob/e6bfd63cab1f5517cc622794149deae9cb0bee4e/break/SchoolLoop/SchoolLoopConstants.swift
+ *  
+ *  For authintication
+ *  https://schoolloop.com/pf4/cms2/view_page?d=x&group_id=1516954809004&vdid=i7fcm1t7v9bh4
+*/
 "use strict"
 // This code had severe leakage
 
 
-/*
-Credit:
-    For the links to the API
-    https://github.com/saagarjha/break/blob/e6bfd63cab1f5517cc622794149deae9cb0bee4e/break/SchoolLoop/SchoolLoopConstants.swift
-    
-    For authintication
-    https://schoolloop.com/pf4/cms2/view_page?d=x&group_id=1516954809004&vdid=i7fcm1t7v9bh4
-*/
+
 //#region imports
 let axios = require('axios');
 let os = require('os')
