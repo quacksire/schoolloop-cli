@@ -204,7 +204,7 @@ async function main() {
     let assignments = await axios(SLassignments).then((response) => { return response.data })
     let news = await axios(SLnews).then((response) => { return response.data })
     let loopmails = await axios(SLloopmail).then((response) => { return response.data })
-    //console.log(loopmails)
+    //console.log(assignments)
     let main = [];
     let firstSpace;
     let secondSpace
@@ -220,7 +220,10 @@ async function main() {
     })
     main.push(`------------------ Assignments ------------------`)
     assignments.forEach((assignment, num) => {
-        firstSpace = ''
+				//Length check
+        if (String(assignment.title).length >= 10) assignment.title = String(assignment.title).slice(0, 10) + ''
+				
+				firstSpace = ''
         let firstSpaces = 15 - String(assignment.title).length
         firstSpace = ' '.repeat(firstSpaces)
         secondSpace = ''
