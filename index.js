@@ -1,6 +1,6 @@
-#!/usr/bin/env node
+ //#!/usr/bin/env node
 
-/*!
+/**
  * Copyright (c) 2021 child-duckling <duck@duckling.pw>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -44,6 +44,12 @@ var Table = require('cli-table');
 const { convert } = require('html-to-text');
 const Conf = require('conf');
 const config = new Conf();
+var Pie = require("cli-pie");
+var randomColor = require('randomcolor')
+
+
+
+
 const loginSpinner = ora('Logging In...').start();
 const loadingSpinner = ora('Loading...')
 
@@ -60,7 +66,7 @@ let year = new Date().getFullYear();
 
 //config.clear()
 //#endregion
-/*
+/**
 Login flow
 This grabs the credentails from the user, logins in, and saves the user info/authintication for use in main()
 */
@@ -71,7 +77,7 @@ async function login() {
     loginSpinner.clear()
     console.clear()
     const spinner = ora('Getting list of schools').start();
-    let schoolList = axios('https://anything-can-go-here.schoolloop.com/mapi/schools')
+    let schoolList = axios('https://anything-can-go-here.schoolloop.com/mapi/schools') //
         .then(async function (response) {
             let schoolNames = new Array()
             response.data.forEach(school => {
@@ -134,18 +140,19 @@ async function login() {
                                 }
                             })
                                 .then(function (response) {
-									///Persist the data
+																		//Persist the data
                                     config.set('auth', `${base64.encode(`${urlencode(username)}:${urlencode(password)}`)}`)
                                     config.set('slUser', response.data)
                                     config.set('slUser.studentID', response.data.students[0].studentID)
                                     config.set('slDomain', school.domainName)
                                     
+																		
                                     checkAuth() //Loopback
                                 })
                                 //////////////////////
                                 .catch(function (err) {
                                     console.error(`Login Failed \n ${err.response.data} \n Trying Again`)
-									setTimeout(checkAuth(), 3000)
+																		setTimeout(checkAuth(), 3000)
                                 })
                         }).catch(console.log);
                     }).catch(console.log);
@@ -153,7 +160,7 @@ async function login() {
                 .catch(console.error);
         });
 }
-/*
+/**
 Main flow
 Grabs data from school loop and displays it in a single Select Prompt. I wanted to emulate the website as much as possible, but I couldn't find 
 a way to display to streams of data on different sides of the terminal window.
@@ -172,6 +179,7 @@ async function main() {
         console.log(`Hello ${String(config.get('slUser').fullName).split(', ')[1]}!`)
     });
     //loadingSpinner.start()
+		/** URLs */
     let SLcourses = {
         method: 'get',
         url: `https://${config.get('slDomain')}/mapi/report_card?studentID=${config.get('slUser.studentID')}`,
@@ -200,29 +208,39 @@ async function main() {
             'Authorization': `Basic ${config.get('auth')}`
         }
     }
+		let SLhelp = {
+        method: 'get',
+        url: `https://${config.get('slDomain')}/mapi/help`,
+        headers: {
+            'Authorization': `Basic ${config.get('auth')}`
+        }
+    }
     let courses = await axios(SLcourses).then((response) => { return response.data })
     let assignments = await axios(SLassignments).then((response) => { return response.data })
     let news = await axios(SLnews).then((response) => { return response.data })
     let loopmails = await axios(SLloopmail).then((response) => { return response.data })
-    //console.log(assignments)
-    let main = [];
+		//console.log(config.get('slUser'))
+    /** Make the menu */
+		let main = [];
     let firstSpace;
     let secondSpace
     main.push(`------------------ Classes ------------------`)
     courses.forEach((classes) => {
         firstSpace = ''
         secondSpace = ''
+				if(String(classes.grade) == 'null') classes.grade = 'Not Reported'
         let firstSpaces = 20 - (String(classes.courseName).length + 2)
         firstSpace = ' '.repeat(parseInt(firstSpaces))
-        let secondSpaces = 15 - (String(classes.grade).length - 1)
+        let secondSpaces = 20 - (String(classes.grade).length - 1)
         secondSpace = ' '.repeat(parseInt(secondSpaces))
+				
         main.push(`${classes.period} ${classes.courseName}${firstSpace}> ${classes.grade}${secondSpace}[${classes.teacherName}]`)
     })
     main.push(`------------------ Assignments ------------------`)
     assignments.forEach((assignment, num) => {
-				//Length check
+				/** Length check */
         if (String(assignment.title).length >= 10) assignment.title = String(assignment.title).slice(0, 10) + ''
-				
+
 				firstSpace = ''
         let firstSpaces = 15 - String(assignment.title).length
         firstSpace = ' '.repeat(firstSpaces)
@@ -255,18 +273,27 @@ async function main() {
     prompt.run()
         .then(async (answer) => {
             //console.log(answer)
-            if (String(answer).startsWith('#')) { /*    News    */
+            if (String(answer).startsWith('#')) { /**    News    */
                 let article = news[parseInt(String(answer).charAt(2))]
-                // The articles are in HTML format
+                /** The articles are in HTML format */
                 article.description = convert(article.description, {
                     wordwrap: 130
                 })
                 //console.log(article)
-                let sentAt = new Date(parseInt(article.createdDate)).toLocaleDateString() //News articles don't have date AND time, only date
+                let sentAt = new Date(parseInt(article.createdDate)).toLocaleDateString() /** News articles don't have date AND time, only date */
                 console.log(`\n\nFrom: ${article.authorName}\nSubject: ${article.title}\nSent: ${sentAt}\n\n${article.description}`)
-            } else if (String(answer).startsWith('@')) { /*    LoopMail    */
+            } else if (String(answer).startsWith('[')) { /**    Assignments    */
+                let assignment = assignments[parseInt(String(answer).charAt(3))]
+                /** The assignments are in HTML format */
+                assignment.description = convert(assignment.description, {
+                    wordwrap: 130
+                })
+                //console.log(article)
+                let sentAt = new Date(parseInt(assignment.assignedDate)).toLocaleDateString()
+                console.log(`\n\nFrom: ${assignment.teacherName}\nAssignments: ${assignment.title}\nSent: ${sentAt}\n\n${assignment.description}`)
+            } else if (String(answer).startsWith('@')) { /**    LoopMail    */
                 let mail = loopmails[parseInt(String(answer).charAt(2))]
-                // The mail is in HTML format
+                /** The mail is in HTML format */
                 let SLmail = {
                     method: 'get',
                     url: `https://${config.get('slDomain')}/mapi/mail_messages?studentID=${config.get('slUser.studentID')}&ID=${mail.ID}`,
@@ -281,9 +308,9 @@ async function main() {
                     wordwrap: 130
                 })
                 console.log(`\n\nFrom: ${message.sender.name}\nSubject: ${message.subject}\nSent: ${sentAt}\n\n${message.message}`)
-            } else if (!isNaN(String(answer).charAt(0))) {  /*    Class Info    */
+            } else if (!isNaN(String(answer).charAt(0))) {  /**    Class Info    */
                 //need some ui library for tables/graphs
-                answer = parseInt(String(answer).split(' ')[0]) - 2
+                answer = parseInt(String(answer).split(' ')[0]) - 1
                 let selectedNum = answer
                 let SLclass = {
                     method: 'get',
@@ -293,7 +320,25 @@ async function main() {
                     }
                 }
                 let SLclassInfo = await axios(SLclass).then((response) => { return response.data })
-                //console.log(SLclassInfo)
+								if (SLclassInfo[0].categories) {
+									let gradePie = SLclassInfo[0].categories || [] 
+									let contents = []
+									gradePie.forEach(grade => {
+										let color = randomColor({
+   										luminosity: 'bright',
+   										format: 'rgbArray'
+										});
+										contents.push({ label: grade.name, value: grade.weight * 10, color: color})
+
+									})
+									var p = new Pie(5, contents, { legend: true });
+									console.log(p.toString());
+								} else {
+
+									console.log('-Pie Chart Not Availible for this class-')
+
+								}
+                //console.log(SLclassInfo[0].categories)
                 var table = new Table()
                 table.push(
                     { 'Name': `${SLclassInfo[0].course.name}` },
@@ -304,7 +349,7 @@ async function main() {
                 )
                 console.log(table.toString())
                 
-            } else if (String(answer).startsWith('!')) { /* CLI tool misc */
+            } else if (String(answer).startsWith('!')) { /** CLI tool misc */
                 if (String(answer) == '! Log Out') {
                     config.clear()
                     
@@ -321,7 +366,7 @@ async function main() {
                 
                 
                 }
-            } else { /* Loop back and redraw */
+            } else { /** Loop back and redraw */
                 //do nothing (used for the fillers)
                 checkAuth()
             }
@@ -335,7 +380,7 @@ async function main() {
             back.run().then(() => { checkAuth() }).catch(console.error);
         })
 }
-/*
+/**
 checkAuth flow
 Checks if authintacation has been completed before, and if not, run login() then loopback.
 */

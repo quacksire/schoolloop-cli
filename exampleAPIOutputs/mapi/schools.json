@@ -1,0 +1,2228 @@
+[
+	{
+		"paid": "false",
+		"domainName": "ams-smfc-ca.schoolloop.com",
+		"districtName": "San Mateo-Foster City School District",
+		"grades": "true",
+		"name": "Abbott Middle School"
+	},
+	{
+		"paid": "true",
+		"domainName": "amc.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "Accel Middle College"
+	},
+	{
+		"paid": "false",
+		"domainName": "add-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Addams"
+	},
+	{
+		"paid": "false",
+		"domainName": "akts-gsd-ca.schoolloop.com",
+		"districtName": "~Guest School District",
+		"grades": "true",
+		"name": "AK Test"
+	},
+	{
+		"paid": "true",
+		"domainName": "anhs-capousd-ca.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Aliso Niguel High School"
+	},
+	{
+		"paid": "true",
+		"domainName": "avms-capousd-ca.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Aliso Viejo Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "alms.schoolloop.com",
+		"districtName": "South San Francisco Unified School District",
+		"grades": "true",
+		"name": "Alta Loma Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "alvarado-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Alvarado Elementary School"
+	},
+	{
+		"paid": "true",
+		"domainName": "ahhs.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "Andrew P. Hill High School"
+	},
+	{
+		"paid": "true",
+		"domainName": "aphs.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "Apollo High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "atcenter-montebellousd-ca.schoolloop.com",
+		"districtName": "Montebello Unified School District",
+		"grades": "true",
+		"name": "Applied Technology Center"
+	},
+	{
+		"paid": "false",
+		"domainName": "arroyo-omsd-ca.schoolloop.com",
+		"districtName": "Ontario-Montclair School District",
+		"grades": "true",
+		"name": "Arroyo IB"
+	},
+	{
+		"paid": "true",
+		"domainName": "avk8-capousd-ca.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Arroyo Vista K-8 School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbavalon.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Avalon K-12 School"
+	},
+	{
+		"paid": "false",
+		"domainName": "aoes-cusd-ca.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "false",
+		"name": "Aviara Oaks Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "aoms.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "true",
+		"name": "Aviara Oaks Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "badenhs.schoolloop.com",
+		"districtName": "South San Francisco Unified School District",
+		"grades": "true",
+		"name": "Baden High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbbancroft.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Bancroft Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "barton-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Barton"
+	},
+	{
+		"paid": "false",
+		"domainName": "ilp-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Beach High School - Intensive Learning Program"
+	},
+	{
+		"paid": "false",
+		"domainName": "bhs-montebellousd-ca.schoolloop.com",
+		"districtName": "Montebello Unified School District",
+		"grades": "true",
+		"name": "Bell Gardens High"
+	},
+	{
+		"paid": "false",
+		"domainName": "bgi-montebellousd-ca.schoolloop.com",
+		"districtName": "Montebello Unified School District",
+		"grades": "true",
+		"name": "Bell Gardens Intermediate"
+	},
+	{
+		"paid": "true",
+		"domainName": "bams.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Bernice Ayer Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "bethune-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Bethune Transitional Center"
+	},
+	{
+		"paid": "false",
+		"domainName": "birney-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Birney"
+	},
+	{
+		"paid": "false",
+		"domainName": "bixby-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Bixby Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "bms-smfc-ca.schoolloop.com",
+		"districtName": "San Mateo-Foster City School District",
+		"grades": "true",
+		"name": "Borel Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "bowditchms-smfc-ca.schoolloop.com",
+		"districtName": "San Mateo-Foster City School District",
+		"grades": "true",
+		"name": "Bowditch Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "bowers-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "Bowers Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "bracher.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "Bracher Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "braly.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "Braly Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "briarwood-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "Briarwood Elementary"
+	},
+	{
+		"paid": "true",
+		"domainName": "bridges-capousd-ca.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Bridges Community Day High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "browning-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Browning High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "browning-soc-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Browning SOC"
+	},
+	{
+		"paid": "false",
+		"domainName": "bry-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Bryant"
+	},
+	{
+		"paid": "false",
+		"domainName": "bms-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "true",
+		"name": "Buchser Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "buckingham.schoolloop.com",
+		"districtName": "Vacaville Unified School District",
+		"grades": "true",
+		"name": "Buckingham Charter Magnet High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "buenavista.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "false",
+		"name": "Buena Vista Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "but-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Buffum"
+	},
+	{
+		"paid": "false",
+		"domainName": "bbk-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Burbank"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbburcham.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Burcham Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "burroughs-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Burroughs Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbcabrillo.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Cabrillo High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "cabrillo-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "true",
+		"name": "Cabrillo Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "cabrillo-soc-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Cabrillo SOC"
+	},
+	{
+		"paid": "false",
+		"domainName": "ches.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "false",
+		"name": "Calavera Hills Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "calavera.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "true",
+		"name": "Calavera Hills Middle School"
+	},
+	{
+		"paid": "true",
+		"domainName": "chs-esuhsd-ca.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "Calero High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbcams.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "California Academy of Mathematics and Science"
+	},
+	{
+		"paid": "false",
+		"domainName": "cs-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "California School"
+	},
+	{
+		"paid": "false",
+		"domainName": "cams-soc-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "CAMS SOC"
+	},
+	{
+		"paid": "true",
+		"domainName": "cvhs.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Capistrano Valley High School"
+	},
+	{
+		"paid": "true",
+		"domainName": "virtual-capousd-ca.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Capistrano Virtual School and Capistrano Home School"
+	},
+	{
+		"paid": "true",
+		"domainName": "chhawks.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Carl Hankey K-8 Academy"
+	},
+	{
+		"paid": "false",
+		"domainName": "carlsbadhs.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "true",
+		"name": "Carlsbad High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "csa.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "true",
+		"name": "Carlsbad Seaside Academy"
+	},
+	{
+		"paid": "false",
+		"domainName": "cva.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "true",
+		"name": "Carlsbad Village Academy"
+	},
+	{
+		"paid": "false",
+		"domainName": "carver-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Carver"
+	},
+	{
+		"paid": "false",
+		"domainName": "cla-omsd-ca.schoolloop.com",
+		"districtName": "Ontario-Montclair School District",
+		"grades": "true",
+		"name": "Central Language Academy"
+	},
+	{
+		"paid": "false",
+		"domainName": "centralpark-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "true",
+		"name": "Central Park Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "chs-gsd-ca.schoolloop.com",
+		"districtName": "~Guest School District",
+		"grades": "true",
+		"name": "Certification High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "chavez-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Chavez"
+	},
+	{
+		"paid": "false",
+		"domainName": "cleveland-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Cleveland Elementary School"
+	},
+	{
+		"paid": "true",
+		"domainName": "cca-capousd-ca.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "College and Career Advantage"
+	},
+	{
+		"paid": "false",
+		"domainName": "cis-montebellousd-ca.schoolloop.com",
+		"districtName": "Montebello Unified School District",
+		"grades": "true",
+		"name": "Contract Independent Studies"
+	},
+	{
+		"paid": "false",
+		"domainName": "cas-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "Coronado High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "chss-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "Coronado High Summer School"
+	},
+	{
+		"paid": "false",
+		"domainName": "countryhs.schoolloop.com",
+		"districtName": "Vacaville Unified School District",
+		"grades": "true",
+		"name": "Country High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbcubberley.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Cubberley K-8 School"
+	},
+	{
+		"paid": "false",
+		"domainName": "cunha.schoolloop.com",
+		"districtName": "Cabrillo Unified School District",
+		"grades": "true",
+		"name": "Cunha Intermediate School"
+	},
+	{
+		"paid": "true",
+		"domainName": "dhhs.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Dana Hills High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "dms-srcs-ca.schoolloop.com",
+		"districtName": "San Rafael City Schools",
+		"grades": "true",
+		"name": "Davidson Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "deanza-omsd-ca.schoolloop.com",
+		"districtName": "Ontario-Montclair School District",
+		"grades": "true",
+		"name": "De Anza Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "dr-orinda-ca.schoolloop.com",
+		"districtName": "Orinda Union School District",
+		"grades": "false",
+		"name": "Del Rey Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "callejon-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "true",
+		"name": "Don Callejon K-8 School"
+	},
+	{
+		"paid": "true",
+		"domainName": "djams-capousd-ca.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Don Juan Avila Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "dooley-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Dooley"
+	},
+	{
+		"paid": "false",
+		"domainName": "eai-montebellousd-ca.schoolloop.com",
+		"districtName": "Montebello Unified School District",
+		"grades": "true",
+		"name": "Eastmont Intermediate"
+	},
+	{
+		"paid": "false",
+		"domainName": "ehs-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "Edgewood High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "ehss-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "Edgewood High Summer School"
+	},
+	{
+		"paid": "false",
+		"domainName": "ems-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "Edgewood Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "edi-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Edison"
+	},
+	{
+		"paid": "false",
+		"domainName": "edis-omsd-ca.schoolloop.com",
+		"districtName": "Ontario-Montclair School District",
+		"grades": "true",
+		"name": "Edison Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "educare-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Educare Los Angeles at Long Beach"
+	},
+	{
+		"paid": "false",
+		"domainName": "ephs-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Educational Partnership High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "echs.schoolloop.com",
+		"districtName": "South San Francisco Unified School District",
+		"grades": "true",
+		"name": "El Camino High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "eme-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Emerson"
+	},
+	{
+		"paid": "false",
+		"domainName": "isp.schoolloop.com",
+		"districtName": "Vacaville Unified School District",
+		"grades": "true",
+		"name": "Ernest Kimme Charter Academy"
+	},
+	{
+		"paid": "false",
+		"domainName": "mcbride-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Ernest S. McBride, Sr. High School"
+	},
+	{
+		"paid": "true",
+		"domainName": "esencia-capousd-ca.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Esencia K-8"
+	},
+	{
+		"paid": "false",
+		"domainName": "dms.schoolloop.com",
+		"districtName": "Huntington Beach City School District",
+		"grades": "true",
+		"name": "Ethel Dwyer Middle School"
+	},
+	{
+		"paid": "true",
+		"domainName": "evhs.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "Evergreen Valley High School"
+	},
+	{
+		"paid": "true",
+		"domainName": "schoolfhhs.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "Foothill High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbfranklin.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Franklin Classical Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "fts-gsd-ca.schoolloop.com",
+		"districtName": "~Guest School District",
+		"grades": "true",
+		"name": "Fraser's Test School"
+	},
+	{
+		"paid": "true",
+		"domainName": "newhart.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Fred Newhart Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "fre-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Fremont"
+	},
+	{
+		"paid": "false",
+		"domainName": "fultonms-fvsd-ca.schoolloop.com",
+		"districtName": "Fountain Valley School District",
+		"grades": "true",
+		"name": "Fulton (Harry C.) Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "connectedms-fvsd-ca.schoolloop.com",
+		"districtName": "Fountain Valley School District",
+		"grades": "true",
+		"name": "FVSD Connected Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "gant-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Gant"
+	},
+	{
+		"paid": "false",
+		"domainName": "garfield-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Garfield"
+	},
+	{
+		"paid": "false",
+		"domainName": "mayne.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "George Mayne Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "gl-orinda-ca.schoolloop.com",
+		"districtName": "Orinda Union School District",
+		"grades": "false",
+		"name": "Glorietta Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbgompers.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Gompers K-8 School"
+	},
+	{
+		"paid": "false",
+		"domainName": "gra-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Grant"
+	},
+	{
+		"paid": "false",
+		"domainName": "hmbhs.schoolloop.com",
+		"districtName": "Cabrillo Unified School District",
+		"grades": "true",
+		"name": "Half Moon Bay High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "haman.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "Haman Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbhamilton.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Hamilton Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "harte-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Harte"
+	},
+	{
+		"paid": "false",
+		"domainName": "hd-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Head Start"
+	},
+	{
+		"paid": "false",
+		"domainName": "henry-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Henry Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "herrera-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Herrera Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "hihill-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Hi Hill Outdoor School"
+	},
+	{
+		"paid": "false",
+		"domainName": "hms-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "Hollencrest Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "hol-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Holmes"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbhoover.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Hoover Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "hope.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "false",
+		"name": "Hope Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbhudson.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Hudson K-8 School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbhughes.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Hughes Middle School"
+	},
+	{
+		"paid": "true",
+		"domainName": "ihs.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "Independence High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "isms.schoolloop.com",
+		"districtName": "Huntington Beach City School District",
+		"grades": "true",
+		"name": "Isaac L Sowers Middle School"
+	},
+	{
+		"paid": "true",
+		"domainName": "jlhs.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "James Lick High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "jefferson.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "false",
+		"name": "Jefferson Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbjefferson.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Jefferson Leadership Academies"
+	},
+	{
+		"paid": "false",
+		"domainName": "jms-msd-ca.schoolloop.com",
+		"districtName": "Moraga School District",
+		"grades": "true",
+		"name": "Joaquin Moraga Intermediate School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbjordan.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Jordan High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "jordan-soc-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Jordan SOC"
+	},
+	{
+		"paid": "false",
+		"domainName": "jp-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Jordan-Plus"
+	},
+	{
+		"paid": "false",
+		"domainName": "hughes.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "Kathryn Hughes Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "kellerms-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Keller Dual Immersion"
+	},
+	{
+		"paid": "false",
+		"domainName": "kelly.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "false",
+		"name": "Kelly Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "kettering-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Kettering"
+	},
+	{
+		"paid": "false",
+		"domainName": "le-llesd-ca.schoolloop.com",
+		"districtName": "Las Lomitas Elementary School District",
+		"grades": "true",
+		"name": "La Entrada School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lmi-montebellousd-ca.schoolloop.com",
+		"districtName": "Montebello Unified School District",
+		"grades": "true",
+		"name": "La Merced Intermediate"
+	},
+	{
+		"paid": "true",
+		"domainName": "lrms-capousd-ca.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Ladera Ranch Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lafayette-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Lafayette"
+	},
+	{
+		"paid": "false",
+		"domainName": "lblakewood.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Lakewood High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lakewood-soc-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Lakewood SOC"
+	},
+	{
+		"paid": "true",
+		"domainName": "lfms-capousd-ca.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Las Flores Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "ll-llesd-ca.schoolloop.com",
+		"districtName": "Las Lomitas Elementary School District",
+		"grades": "false",
+		"name": "Las Lomitas Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "le-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "Laurelwood Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "lincoln-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Lincoln"
+	},
+	{
+		"paid": "false",
+		"domainName": "lblindbergh.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Lindbergh STEM Academy"
+	},
+	{
+		"paid": "false",
+		"domainName": "lblindsey.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Lindsey Academy"
+	},
+	{
+		"paid": "false",
+		"domainName": "longfellow-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Longfellow"
+	},
+	{
+		"paid": "false",
+		"domainName": "loscerritos-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Los Cerritos"
+	},
+	{
+		"paid": "false",
+		"domainName": "lowell-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Lowell Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "macarthur-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "MacArthur Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "mai-montebellousd-ca.schoolloop.com",
+		"districtName": "Montebello Unified School District",
+		"grades": "true",
+		"name": "Macy Intermediate"
+	},
+	{
+		"paid": "false",
+		"domainName": "madison-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Madison Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "mes-cusd-ca.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "false",
+		"name": "Magnolia Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "mann-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Mann"
+	},
+	{
+		"paid": "true",
+		"domainName": "mfms.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Marco Forster Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "mr-gsd-ca.schoolloop.com",
+		"districtName": "~Guest School District",
+		"grades": "true",
+		"name": "Marlon Test School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbmarshall.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Marshall Academy of the Arts"
+	},
+	{
+		"paid": "false",
+		"domainName": "masudams-fvsd-ca.schoolloop.com",
+		"districtName": "Fountain Valley School District",
+		"grades": "true",
+		"name": "Masuda (Kazuo) Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "mcbride-soc-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "McBride SOC"
+	},
+	{
+		"paid": "false",
+		"domainName": "mckinley-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "McKinley"
+	},
+	{
+		"paid": "false",
+		"domainName": "mers-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "Merlinda School"
+	},
+	{
+		"paid": "true",
+		"domainName": "mcms-dsd-ca.schoolloop.com",
+		"districtName": "Miller Creek School District",
+		"grades": "true",
+		"name": "Miller Creek Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbmillikan.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Millikan High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "millikan-soc-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Millikan SOC"
+	},
+	{
+		"paid": "false",
+		"domainName": "mbe-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "Millikin Basics + Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "mechs-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "true",
+		"name": "Mission Early College High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "montague.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "Montague Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "mvs-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "Monte Vista School"
+	},
+	{
+		"paid": "false",
+		"domainName": "cds-montebellousd-ca.schoolloop.com",
+		"districtName": "Montebello Unified School District",
+		"grades": "true",
+		"name": "Montebello Community Day School"
+	},
+	{
+		"paid": "false",
+		"domainName": "mhs-montebellousd-ca.schoolloop.com",
+		"districtName": "Montebello Unified School District",
+		"grades": "true",
+		"name": "Montebello High"
+	},
+	{
+		"paid": "false",
+		"domainName": "moi-montebellousd-ca.schoolloop.com",
+		"districtName": "Montebello Unified School District",
+		"grades": "true",
+		"name": "Montebello Intermediate"
+	},
+	{
+		"paid": "true",
+		"domainName": "mphs.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "Mt. Pleasant High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "msac-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "Mt. SAC Early College Academy"
+	},
+	{
+		"paid": "false",
+		"domainName": "msacss-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "Mt. SAC Early College Academy Summer School"
+	},
+	{
+		"paid": "false",
+		"domainName": "muir-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Muir"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbmuir.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Muir Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "naples-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Naples"
+	},
+	{
+		"paid": "false",
+		"domainName": "na-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Nelson Academy"
+	},
+	{
+		"paid": "false",
+		"domainName": "nes-brssd-ca.schoolloop.com",
+		"districtName": "Belmont-Redwood Shores School District",
+		"grades": "true",
+		"name": "Nesbit Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "nvhs-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "true",
+		"name": "New Valley High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbnewcomb.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Newcomb K-8 School"
+	},
+	{
+		"paid": "true",
+		"domainName": "niguelhills.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Niguel Hills Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "nsm-smfc-ca.schoolloop.com",
+		"districtName": "San Mateo-Foster City School District",
+		"grades": "true",
+		"name": "North Shoreview Montessori"
+	},
+	{
+		"paid": "true",
+		"domainName": "oghs.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "Oak Grove High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "oaks-omsd-ca.schoolloop.com",
+		"districtName": "Ontario-Montclair School District",
+		"grades": "true",
+		"name": "Oaks Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "ois-orinda-ca.schoolloop.com",
+		"districtName": "Orinda Union School District",
+		"grades": "true",
+		"name": "Orinda Intermediate School"
+	},
+	{
+		"paid": "false",
+		"domainName": "int-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Oropeza Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "pacificrim.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "false",
+		"name": "Pacific Rim Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "phms.schoolloop.com",
+		"districtName": "South San Francisco Unified School District",
+		"grades": "true",
+		"name": "Parkway Heights Middle School"
+	},
+	{
+		"paid": "true",
+		"domainName": "pgshs.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "Pegasus High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "pms-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "true",
+		"name": "Peterson Middle School"
+	},
+	{
+		"paid": "true",
+		"domainName": "schoolpxhs.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "Phoenix High School"
+	},
+	{
+		"paid": "true",
+		"domainName": "phhs.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "Piedmont Hills High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "pes-cusd-ca.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "false",
+		"name": "Poinsettia Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbpaal.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Poly Academy of Achievers and Leaders"
+	},
+	{
+		"paid": "false",
+		"domainName": "poly-soc-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Poly SOC"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbpoly.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Polytechnic High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "pes.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "Pomeroy Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "ponderosa-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "Ponderosa Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbpowell.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Powell K-8 Academy for Success"
+	},
+	{
+		"paid": "false",
+		"domainName": "prisk-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Prisk"
+	},
+	{
+		"paid": "false",
+		"domainName": "ral-brssd-ca.schoolloop.com",
+		"districtName": "Belmont-Redwood Shores School District",
+		"grades": "true",
+		"name": "Ralston Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "reid-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Reid Continuation High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbrhsa.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Renaissance School for the Arts"
+	},
+	{
+		"paid": "false",
+		"domainName": "renaissance-soc-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Renaissance SOC"
+	},
+	{
+		"paid": "false",
+		"domainName": "riley-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Riley Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "rva-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "Rio Verde Secondary"
+	},
+	{
+		"paid": "false",
+		"domainName": "rvss-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "Rio Verde Secondary Summer School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbrobinson.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Robinson K-8 Academy"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbrogers.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Rogers Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "roosevelt-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Roosevelt"
+	},
+	{
+		"paid": "false",
+		"domainName": "rpe-montebellousd-ca.schoolloop.com",
+		"districtName": "Montebello Unified School District",
+		"grades": "true",
+		"name": "Rosewood Park School"
+	},
+	{
+		"paid": "false",
+		"domainName": "sagecreek-cusd-ca.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "true",
+		"name": "Sage Creek High School"
+	},
+	{
+		"paid": "true",
+		"domainName": "sctritons.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "San Clemente High School"
+	},
+	{
+		"paid": "true",
+		"domainName": "sjhhs.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "San Juan Hills High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "sb785-gsd-ca.schoolloop.com",
+		"districtName": "~Guest School District",
+		"grades": "true",
+		"name": "Sandbox 2336785"
+	},
+	{
+		"paid": "false",
+		"domainName": "sb817-gsd-ca.schoolloop.com",
+		"districtName": "~Guest School District",
+		"grades": "true",
+		"name": "Sandbox 4132817"
+	},
+	{
+		"paid": "false",
+		"domainName": "san-brssd-ca.schoolloop.com",
+		"districtName": "Belmont-Redwood Shores School District",
+		"grades": "true",
+		"name": "Sandpiper Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "sccds-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "true",
+		"name": "Santa Clara Community Day School"
+	},
+	{
+		"paid": "false",
+		"domainName": "santaclara.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "true",
+		"name": "Santa Clara High School"
+	},
+	{
+		"paid": "true",
+		"domainName": "sths.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "Santa Teresa High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "sato-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Sato Academy of Mathematics and Science"
+	},
+	{
+		"paid": "false",
+		"domainName": "sato-soc-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Sato SOC"
+	},
+	{
+		"paid": "false",
+		"domainName": "shs-montebellousd-ca.schoolloop.com",
+		"districtName": "Montebello Unified School District",
+		"grades": "true",
+		"name": "Schurr High"
+	},
+	{
+		"paid": "false",
+		"domainName": "scottlane.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "Scott Lane Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "serrano-omsd-ca.schoolloop.com",
+		"districtName": "Ontario-Montclair School District",
+		"grades": "true",
+		"name": "Serrano Middle School"
+	},
+	{
+		"paid": "true",
+		"domainName": "shorecliffs.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Shorecliffs Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "sierravista.schoolloop.com",
+		"districtName": "Vacaville Unified School District",
+		"grades": "true",
+		"name": "Sierra Vista K-8"
+	},
+	{
+		"paid": "false",
+		"domainName": "signalhill-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Signal Hill"
+	},
+	{
+		"paid": "false",
+		"domainName": "signallhill-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Signal Hill Elementary"
+	},
+	{
+		"paid": "true",
+		"domainName": "schs.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "Silver Creek High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "sh-orinda-ca.schoolloop.com",
+		"districtName": "Orinda Union School District",
+		"grades": "false",
+		"name": "Sleepy Hollow Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "smith-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Smith Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "ssfhs.schoolloop.com",
+		"districtName": "South San Francisco Unified School District",
+		"grades": "true",
+		"name": "South San Francisco High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbstanford.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Stanford Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "sms-lafsd-ca.schoolloop.com",
+		"districtName": "Lafayette School District",
+		"grades": "true",
+		"name": "Stanley Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "starrking-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Starr King Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbstephens.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Stephens Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "stevenson-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Stevenson"
+	},
+	{
+		"paid": "false",
+		"domainName": "se-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "Sutter Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "sui-montebellousd-ca.schoolloop.com",
+		"districtName": "Montebello Unified School District",
+		"grades": "true",
+		"name": "Suva Intermediate"
+	},
+	{
+		"paid": "false",
+		"domainName": "talbertms-fvsd-ca.schoolloop.com",
+		"districtName": "Fountain Valley School District",
+		"grades": "true",
+		"name": "Talbert (Samuel E.) Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "templetonhs.schoolloop.com",
+		"districtName": "Templeton Unified School District",
+		"grades": "false",
+		"name": "Templeton High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "templetonms.schoolloop.com",
+		"districtName": "Templeton Unified School District",
+		"grades": "false",
+		"name": "Templeton Middle School"
+	},
+	{
+		"paid": "true",
+		"domainName": "tshs-capousd-ca.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Tesoro High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "stem.schoolloop.com",
+		"districtName": "San Mateo-Foster City School District",
+		"grades": "true",
+		"name": "The Bayside Stem Academy"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbsa-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "The Long Beach School For Adults"
+	},
+	{
+		"paid": "true",
+		"domainName": "ncaalfa.schoolloop.com",
+		"districtName": "The NCA School District",
+		"grades": "false",
+		"name": "The NCA School Alfa"
+	},
+	{
+		"paid": "true",
+		"domainName": "ncabeta.schoolloop.com",
+		"districtName": "The NCA School District",
+		"grades": "true",
+		"name": "The NCA School Beta"
+	},
+	{
+		"paid": "true",
+		"domainName": "t3h-ga.schoolloop.com",
+		"districtName": "Think3 Demo District",
+		"grades": "true",
+		"name": "Think3 High"
+	},
+	{
+		"paid": "false",
+		"domainName": "top.schoolloop.com",
+		"districtName": "Vacaville Unified School District",
+		"grades": "true",
+		"name": "Thrower Opportunity Program"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbtincher.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Tincher K-8 Preparatory School"
+	},
+	{
+		"paid": "false",
+		"domainName": "twain-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Twain"
+	},
+	{
+		"paid": "true",
+		"domainName": "serra-capousd-ca.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Union High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "vacapena.schoolloop.com",
+		"districtName": "Vacaville Unified School District",
+		"grades": "true",
+		"name": "Vaca Pena Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "vhs.schoolloop.com",
+		"districtName": "Vacaville Unified School District",
+		"grades": "true",
+		"name": "Vacaville High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "vhs-montebellousd-ca.schoolloop.com",
+		"districtName": "Montebello Unified School District",
+		"grades": "true",
+		"name": "Vail High"
+	},
+	{
+		"paid": "false",
+		"domainName": "vms.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "true",
+		"name": "Valley Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "vv-srcs-ca.schoolloop.com",
+		"districtName": "San Rafael City Schools",
+		"grades": "true",
+		"name": "Venetia Valley"
+	},
+	{
+		"paid": "false",
+		"domainName": "vernon-omsd-ca.schoolloop.com",
+		"districtName": "Ontario-Montclair School District",
+		"grades": "true",
+		"name": "Vernon Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "vinadanks-omsd-ca.schoolloop.com",
+		"districtName": "Ontario-Montclair School District",
+		"grades": "true",
+		"name": "Vina Danks Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "vs-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "Vine School"
+	},
+	{
+		"paid": "false",
+		"domainName": "vine-omsd-ca.schoolloop.com",
+		"districtName": "Ontario-Montclair School District",
+		"grades": "true",
+		"name": "Vineyard STEM"
+	},
+	{
+		"paid": "true",
+		"domainName": "vdm.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "Vista del Mar Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "wr-orinda-ca.schoolloop.com",
+		"districtName": "Orinda Union School District",
+		"grades": "false",
+		"name": "Wagner Ranch Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "wgis-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "Walnut Grove Intermediate School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbwashington.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Washington Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "woe-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "Washington Open Elementary"
+	},
+	{
+		"paid": "false",
+		"domainName": "webster-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Webster"
+	},
+	{
+		"paid": "false",
+		"domainName": "wchs-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "West Covina High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "wchss-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "West Covina High Summer School"
+	},
+	{
+		"paid": "false",
+		"domainName": "wms.schoolloop.com",
+		"districtName": "South San Francisco Unified School District",
+		"grades": "true",
+		"name": "Westborough Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "wes-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "false",
+		"name": "Westwood Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "whittier-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Whittier"
+	},
+	{
+		"paid": "false",
+		"domainName": "wilcox.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "true",
+		"name": "Wilcox High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "wcw.schoolloop.com",
+		"districtName": "Vacaville Unified School District",
+		"grades": "true",
+		"name": "Will C. Wood High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "wld-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Willard"
+	},
+	{
+		"paid": "true",
+		"domainName": "wcohs.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "William C. Overfelt High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "jepson.schoolloop.com",
+		"districtName": "Vacaville Unified School District",
+		"grades": "true",
+		"name": "Willis Jepson Middle School"
+	},
+	{
+		"paid": "false",
+		"domainName": "lbwilson.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Wilson High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "wilson-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "true",
+		"name": "Wilson High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "wilson-soc-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "Wilson SOC"
+	},
+	{
+		"paid": "false",
+		"domainName": "wiltsey-omsd-ca.schoolloop.com",
+		"districtName": "Ontario-Montclair School District",
+		"grades": "true",
+		"name": "Wiltsey Middle School"
+	},
+	{
+		"paid": "true",
+		"domainName": "ybhs.schoolloop.com",
+		"districtName": "East Side Union High School District",
+		"grades": "true",
+		"name": "Yerba Buena High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "ds2-slb-ca.schoolloop.com",
+		"districtName": "~School Loop Bob",
+		"grades": "true",
+		"name": "~Apple App Demo School"
+	},
+	{
+		"paid": "false",
+		"domainName": "ads-aps-nm.schoolloop.com",
+		"districtName": "Albuquerque Public Schools",
+		"grades": "true",
+		"name": "~APS Demo School"
+	},
+	{
+		"paid": "true",
+		"domainName": "bijugb-biju-ca.schoolloop.com",
+		"districtName": "~School Loop Biju",
+		"grades": "true",
+		"name": "~Biju Gradebook"
+	},
+	{
+		"paid": "true",
+		"domainName": "cpms-cd-ca.schoolloop.com",
+		"districtName": "Capistrano Unified School District",
+		"grades": "true",
+		"name": "~Capo Demo High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "cts-gsd-ca.schoolloop.com",
+		"districtName": "~Guest School District",
+		"grades": "true",
+		"name": "~Certification Test School"
+	},
+	{
+		"paid": "false",
+		"domainName": "democu.schoolloop.com",
+		"districtName": "Carlsbad Unified School District",
+		"grades": "true",
+		"name": "~demo Carlsbad School"
+	},
+	{
+		"paid": "true",
+		"domainName": "des-ddps-ca.schoolloop.com",
+		"districtName": "~Demo District Professional Services",
+		"grades": "true",
+		"name": "~Demo Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "dhs-gsd-ca.schoolloop.com",
+		"districtName": "~Guest School District",
+		"grades": "true",
+		"name": "~Demo High School (Plus)"
+	},
+	{
+		"paid": "false",
+		"domainName": "dms-gsd-ca.schoolloop.com",
+		"districtName": "~Guest School District",
+		"grades": "false",
+		"name": "~Demo Middle School (Portal)"
+	},
+	{
+		"paid": "false",
+		"domainName": "fvds-fvsd-ca.schoolloop.com",
+		"districtName": "Fountain Valley School District",
+		"grades": "true",
+		"name": "~Demo: Fountain Valley School"
+	},
+	{
+		"paid": "false",
+		"domainName": "demo-montebellousd-ca.schoolloop.com",
+		"districtName": "Montebello Unified School District",
+		"grades": "true",
+		"name": "~Demo: Montebello School"
+	},
+	{
+		"paid": "false",
+		"domainName": "nmdemo.schoolloop.com",
+		"districtName": "Newport Mesa Unified School District",
+		"grades": "true",
+		"name": "~Demo: Newport Mesa School"
+	},
+	{
+		"paid": "false",
+		"domainName": "pes-lbusd-ca.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "~Demo: Play Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "fams.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "~Fake Academy of Mathematics and Science"
+	},
+	{
+		"paid": "false",
+		"domainName": "fakewood.schoolloop.com",
+		"districtName": "Long Beach Unified School District",
+		"grades": "true",
+		"name": "~Fakewood High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "ohs-slb-ca.schoolloop.com",
+		"districtName": "~School Loop Bob",
+		"grades": "true",
+		"name": "~Illuminate Test School"
+	},
+	{
+		"paid": "false",
+		"domainName": "acsms-sandbox-ca.schoolloop.com",
+		"districtName": "Lafayette School District",
+		"grades": "true",
+		"name": "~Lafayette Demo School"
+	},
+	{
+		"paid": "false",
+		"domainName": "mhs-slb-ca.schoolloop.com",
+		"districtName": "~School Loop Bob",
+		"grades": "true",
+		"name": "~Millennium High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "mes-slb-ca.schoolloop.com",
+		"districtName": "~School Loop Bob",
+		"grades": "true",
+		"name": "~Montebello Elementary School"
+	},
+	{
+		"paid": "false",
+		"domainName": "mms-slb-ca.schoolloop.com",
+		"districtName": "~School Loop Bob",
+		"grades": "true",
+		"name": "~Neon High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "dhs-omsd-ca.schoolloop.com",
+		"districtName": "Ontario-Montclair School District",
+		"grades": "true",
+		"name": "~Ontario-Montclair Demo School"
+	},
+	{
+		"paid": "false",
+		"domainName": "ps8-slb-ca.schoolloop.com",
+		"districtName": "~School Loop Bob",
+		"grades": "true",
+		"name": "~Play High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "phs-slg-ca.schoolloop.com",
+		"districtName": "~School Loop Hilary Demo District",
+		"grades": "true",
+		"name": "~Plus High School"
+	},
+	{
+		"paid": "false",
+		"domainName": "dpgbs-sld-ca.schoolloop.com",
+		"districtName": "~School Loop Bob",
+		"grades": "true",
+		"name": "~Plus School #2"
+	},
+	{
+		"paid": "false",
+		"domainName": "ps3-dusd-ca.schoolloop.com",
+		"districtName": "~School Loop Bob",
+		"grades": "true",
+		"name": "~Plus School #3"
+	},
+	{
+		"paid": "false",
+		"domainName": "pjh-slg-ca.schoolloop.com",
+		"districtName": "~School Loop Hilary Demo District",
+		"grades": "false",
+		"name": "~Portal Junior High"
+	},
+	{
+		"paid": "false",
+		"domainName": "dpps-sld-ca.schoolloop.com",
+		"districtName": "~School Loop Bob",
+		"grades": "false",
+		"name": "~Portal School #1"
+	},
+	{
+		"paid": "false",
+		"domainName": "nms-dusd-ca.schoolloop.com",
+		"districtName": "~School Loop Bob",
+		"grades": "false",
+		"name": "~Portal School #2"
+	},
+	{
+		"paid": "false",
+		"domainName": "nles-dusd-ca.schoolloop.com",
+		"districtName": "~School Loop Bob",
+		"grades": "false",
+		"name": "~Portal School #3"
+	},
+	{
+		"paid": "false",
+		"domainName": "sc-demo-scusd-ca.schoolloop.com",
+		"districtName": "Santa Clara Unified School District",
+		"grades": "true",
+		"name": "~SCUSD Demo School"
+	},
+	{
+		"paid": "false",
+		"domainName": "sts-gsd-ca.schoolloop.com",
+		"districtName": "~Guest School District",
+		"grades": "true",
+		"name": "~Shady Test School"
+	},
+	{
+		"paid": "false",
+		"domainName": "demo-srcs-ca.schoolloop.com",
+		"districtName": "San Rafael City Schools",
+		"grades": "true",
+		"name": "~SRCS Demo"
+	},
+	{
+		"paid": "false",
+		"domainName": "ds4-sls-ca.schoolloop.com",
+		"districtName": "Vacaville Unified School District",
+		"grades": "true",
+		"name": "~VUSD Demo School"
+	},
+	{
+		"paid": "false",
+		"domainName": "wcds-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "~West Covina Demo School"
+	},
+	{
+		"paid": "false",
+		"domainName": "demo-wcusd-ca.schoolloop.com",
+		"districtName": "West Covina Unified School District",
+		"grades": "true",
+		"name": "~West Covina Demo School"
+	}
+]
